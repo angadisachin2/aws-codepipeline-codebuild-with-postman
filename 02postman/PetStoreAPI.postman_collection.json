@@ -24,7 +24,7 @@
 							"    // assert that the response has a valid JSON body",
 							"    pm.response.to.be.withBody;",
 							"     ",
-							"    pm.response.to.be.json; // this assertion also checks if a body  exists, so the above check is not needed",
+							"    pm.response.to.be.json; // thiss assertion also checks if a body  exists, so the above check is not needed",
 							"     ",
 							"    //make sure we have a valid json array",
 							"    pm.expect(pm.response.json()).to.be.an('array').but.not.an('object');",
