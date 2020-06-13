@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="PetStoreAPI" tests="3" time="2.829">
+  <testsuite name="list pets" id="a418332b-6185-4ef0-b542-b3f160e5a57c" timestamp="2020-06-13T19:00:28.146Z" tests="3" failures="0" errors="0" time="0.850">
+    <testcase name="Is valid response with json array in body" time="0.850" classname="PetStoreApi"/>
+    <testcase name="Has Content-Type header" time="0.850" classname="PetStoreApi"/>
+    <testcase name="Is response time is less than 1000ms" time="0.850" classname="PetStoreApi"/>
+  </testsuite>
+  <testsuite name="add pet" id="b80e5941-8a9c-49d7-b608-41cb1eda87f0" timestamp="2020-06-13T19:00:28.146Z" tests="4" failures="0" errors="0" time="0.966">
+    <testcase name="Is valid response with json object in body" time="0.966" classname="PetStoreApi"/>
+    <testcase name="Has Content-Type header" time="0.966" classname="PetStoreApi"/>
+    <testcase name="Is message response equal sucess" time="0.966" classname="PetStoreApi"/>
+    <testcase name="Is response time is less than 1000ms" time="0.966" classname="PetStoreApi"/>
+  </testsuite>
+  <testsuite name="get pet by id" id="203072aa-aca7-4d2a-8f41-0fd2cd23a70d" timestamp="2020-06-13T19:00:28.146Z" tests="3" failures="1" errors="0" time="1.013">
+    <testcase name="Is valid response with json object in body" time="1.013" classname="PetStoreApi"/>
+    <testcase name="Has Content-Type header" time="1.013" classname="PetStoreApi"/>
+    <testcase name="Is response time is less than 1000ms" time="1.013" classname="PetStoreApi">
+      <failure type="AssertionFailure" message="expected 1013 to be below 1000">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 83e98cfc-83a9-46f8-916d-21d1a2b4e062.]]>
+        <![CDATA[Collection name: PetStoreAPI.]]>
+        <![CDATA[Request name: get pet by id.]]>
+        <![CDATA[Test description: Is response time is less than 1000ms.]]>
+        <![CDATA[Error message: expected 1013 to be below 1000.]]>
+        <![CDATA[Stacktrace: AssertionError: expected 1013 to be below 1000
+   at Object.eval sandbox-script.js:3:3).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+</testsuites>
